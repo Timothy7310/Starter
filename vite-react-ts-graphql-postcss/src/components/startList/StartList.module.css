@@ -1,0 +1,20 @@
+.list {
+  display: grid;
+  grid-gap: 28px 30px;
+  grid-template-columns: repeat(6, 185px);
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-align: start;
+}

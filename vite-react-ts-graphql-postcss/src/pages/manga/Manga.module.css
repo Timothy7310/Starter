@@ -1,0 +1,6 @@
+.inner__manga {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+}

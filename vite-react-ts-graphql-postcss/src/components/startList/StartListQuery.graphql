@@ -1,0 +1,23 @@
+query StartListQuery(
+  $page: Int = 1
+  $perPage: Int = 6
+  $type: MediaType
+  $sort: [MediaSort]
+  $seasonYear: Int
+  $season: MediaSeason
+) {
+  Page(page: $page, perPage: $perPage) {
+    media(type: $type, sort: $sort, seasonYear: $seasonYear, season: $season) {
+      id
+      title {
+        english
+        romaji
+      }
+      coverImage {
+        large
+        extraLarge
+        color
+      }
+    }
+  }
+}
